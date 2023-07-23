@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/design.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="page">
+    <header>Plagiarism Checker</header>
+    <textarea name="content" placeholder="Text content here..."></textarea>
+    <button class="material-symbols-outlined" onclick="startCheck()">start</button>
+
+    <section class="load_box">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+
+    <section class="out_box">
+      <small class="material-symbols-outlined" onclick="toggleOutBox()">linear_scale</small>
+      <strong>-</strong>
+      <a href="" target="_blank">
+        <p></p>
+        <i class="material-symbols-outlined">link</i>
+      </a>
+    </section>
+  </section>
+</body>
+<script>
+  const out_box = document.querySelector('.out_box')
+
+
+  const toggleOutBox = () => {
+    out_box.classList.toggle('change')
+  } 
+</script>
+<script src="js/engine.js"></script>
+
+</html>

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Commissioner&family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+@font-face {
+    font-family: 'DessauProDrei';
+    src: url('DessauProDrei.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+    scroll-behavior: smooth;
+}
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 3vh 10%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 1rem 0;
+    align-items: flex-start;
+}
+
+h1{
+  font-family: 'DessauProDrei', sans-serif;
+  font-weight: 400;
+}
+
+div::-webkit-scrollbar ,section::-webkit-scrollbar, textarea::-webkit-scrollbar{
+  height: 10px;
+  background: darkgray;
+  cursor: pointer;
+  border-radius: 100px;
+  width: 10px;
+}
+
+section::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb{
+  background: whitesmoke;
+  border-radius: 100px;
+}
